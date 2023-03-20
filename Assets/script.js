@@ -8,6 +8,13 @@ var generateBtn = document.querySelector("#generate");
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
+  var limitInput = document.getElementByID("num-sel");
+  var result = document.getElementByID("textarea");
+
+  for (let i=0; i < limitInput; i++) {
+      
+  }
+
 
   passwordText.value = password;
 

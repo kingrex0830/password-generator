@@ -12,22 +12,55 @@
       <header>
         <h1>Password Generator</h1>
       </header>
+
       <div class="card">
+
         <div class="card-header">
-          <h2>Generate a Password</h2>
+          <h2>Input Your Password Criteria</h2>
+        </div>
+
+        <div class="selectors">
+
+          <input id="num-sel" type="number" min="8" max="128">
+
+          <label class="lowercase">Lowercase
+            <input type="checkbox" checked="checked">
+            <span class="checkmark"></span>
+          </label>
+          
+          <label class="uppercase">Uppercase
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          
+          <label class="numbers">Numbers
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          
+          <label class="spec-char">Special characters
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+
         </div>
         <div class="card-body">
+
           <textarea
             readonly
             id="password"
             placeholder="Your Secure Password"
             aria-label="Generated Password"
           ></textarea>
+
         </div>
+
         <div class="card-footer">
           <button id="generate" class="btn">Generate Password</button>
         </div>
+
       </div>
+      
     </div>
     <script src="script.js"></script>
   </body>
